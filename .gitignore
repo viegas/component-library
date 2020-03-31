@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules
+
+# Build folder
+dist
+
+# Optional npm cache directory
+.npm
+
+# Coverage directory genereted by jest
+coverage
+
+#visual studio code
+.vscode/
+
+#Cache folders
+.cache/

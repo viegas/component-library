@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> <Styled.Spinner /> Should render correctly 1`] = `
+.c0 {
+  height: px;
+  width: px;
+  border-radius: 50%;
+  border: px solid rgba(0,0,0,0.1);
+  -webkit-animation: ibwhYF 800ms ease infinite;
+  animation: ibwhYF 800ms ease infinite;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Loader /> Should render correctly 1`] = `
+<Loaderstyles__Spinner
+  color="#f96d00"
+  size={20}
+  strokeWidth={1}
+/>
+`;

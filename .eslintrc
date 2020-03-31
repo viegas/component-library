@@ -1,0 +1,40 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": ["error", 4],
+        "import/prefer-default-export": ["off"],
+        "react/forbid-prop-types": ["off"],
+        "react/jsx-filename-extension": ["off"],
+        "react/jsx-closing-bracket-location": ["off"],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "react/no-unused-prop-types": ["error"],
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": [
+                "**/*.test.jsx",
+                "**/*.stories.js"
+            ]
+        }]
+    },
+    "overrides": [
+        {
+            "files": ["**/*.test.js"],
+            "env": {
+                "jest": true
+            },
+            "globals": {
+                "React": true,
+                "renderStyledComponent": true,
+                "styledComponentsSnapshots": true,
+                "shallow": true
+            }
+        },
+        {
+            "files": ["**/*.stories.js", "**/*.spec.js"],
+            "rules": {
+                "react/jsx-filename-extension": ["off"]
+            }
+        }
+    ]
+}
