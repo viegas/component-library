@@ -17,7 +17,7 @@ exports[`<Loader /> <Styled.Spinner /> Should render correctly 1`] = `
 
 exports[`<Loader /> Should render correctly 1`] = `
 <Loaderstyles__Spinner
-  color="#f96d00"
+  color="blue"
   size={20}
   strokeWidth={1}
 />

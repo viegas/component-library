@@ -1,12 +1,3 @@
-const mediaQueries = (breakpoints) => ({
-    query: (breakpoint, down) => {
-        const size = breakpoints[breakpoint];
-        const mediaQuery = down ? `(max-width: ${size - 1}px)` : `(min-width: ${size}px)`;
-
-        return `@media ${mediaQuery}`;
-    },
-});
-
 const theme = {
     spacings: {
         small: '5px',
@@ -68,14 +59,15 @@ const theme = {
     },
 };
 
-theme.media.query = {
-    ...Object.keys(theme.media.breakpoints).reduce((acc, breakpoint) => {
+export const mediaQueriesGenerator = (breakpoints) =>
+    Object.keys(breakpoints).reduce((acc, breakpoint) => {
         const size = theme.media.breakpoints[breakpoint];
         const mediaQuery = `(min-width: ${size}px)`;
 
         acc[breakpoint] = `@media ${mediaQuery}`;
         return acc;
-    }, {}),
-};
+    }, {});
+
+theme.media.query = mediaQueriesGenerator(theme.media.breakpoints);
 
 export default theme;

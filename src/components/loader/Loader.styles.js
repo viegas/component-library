@@ -11,7 +11,6 @@ export const Spinner = styled.div`
         height: ${size}px;
         width: ${size}px;
         border-radius: 50%;
-
         border: ${strokeWidth}px solid rgba(0, 0, 0, 0.1);
 
         border-bottom-color: ${theme.colors[color]};

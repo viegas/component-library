@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> <Styled.Button /> Check disabled type 1`] = `
+.c0 {
+  position: relative;
+  max-width: 320px;
+  border-radius: 50vh;
+  padding: 5px 20px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  border: solid 2px #bbbbbb;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="disabled"
+/>
+`;
+
+exports[`<Button /> <Styled.Button /> Check primary type 1`] = `
+.c0 {
+  position: relative;
+  max-width: 320px;
+  border-radius: 50vh;
+  padding: 5px 20px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  border: solid 2px #357edd;
+  background-color: #357edd;
+  color: #ffffff;
+}
+
+.c0:hover {
+  background-color: #96ccff;
+}
+
+<button
+  className="c0"
+  type="primary"
+/>
+`;
+
+exports[`<Button /> <Styled.Button /> Check secondary type 1`] = `
+.c0 {
+  position: relative;
+  max-width: 320px;
+  border-radius: 50vh;
+  padding: 5px 20px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  border: solid 2px #357edd;
+  background-color: #ffffff;
+  color: #357edd;
+}
+
+.c0:hover {
+  border-color: #96ccff;
+  color: #96ccff;
+}
+
+<button
+  className="c0"
+  type="secondary"
+/>
+`;
+
+exports[`<Button /> <Styled.LoaderWrapper /> Should render correctly 1`] = `
+.c0 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c0 > svg {
+  display: block;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`<Button /> Should render correctly 1`] = `
+<Buttonstyles__Button
+  type="primary"
+>
+  Test
+</Buttonstyles__Button>
+`;
+
+exports[`<Button /> Should render correctly the busy loader 1`] = `
+<Buttonstyles__Button
+  type="disabled"
+>
+  Test
+  <Buttonstyles__LoaderWrapper>
+    <Loader
+      color="dark-blue"
+      size="sm"
+    />
+  </Buttonstyles__LoaderWrapper>
+</Buttonstyles__Button>
+`;
+
+exports[`<Button /> Should render correctly with disabled prop 1`] = `
+<Buttonstyles__Button
+  type="disabled"
+>
+  Test
+</Buttonstyles__Button>
+`;
