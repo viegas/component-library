@@ -23,7 +23,7 @@ describe('<Button />', () => {
 
     describe('<Styled.Button />', () => {
         it('Check primary type', () => {
-            const wrapper = renderStyledComponent(<Styled.Button type={'primary'} />);
+            const wrapper = renderStyledComponent(<Styled.Button type="primary" />);
 
             expect(wrapper).toHaveStyleRule('border', `solid 2px ${theme.colors.blue}`);
             expect(wrapper).toHaveStyleRule('background-color', theme.colors.blue);
@@ -33,7 +33,7 @@ describe('<Button />', () => {
         });
 
         it('Check secondary type', () => {
-            const wrapper = renderStyledComponent(<Styled.Button type={'secondary'} />);
+            const wrapper = renderStyledComponent(<Styled.Button type="secondary" />);
 
             expect(wrapper).toHaveStyleRule('border', `solid 2px ${theme.colors.blue}`);
             expect(wrapper).toHaveStyleRule('background-color', theme.colors.white);
@@ -43,7 +43,7 @@ describe('<Button />', () => {
         });
 
         it('Check disabled type', () => {
-            const wrapper = renderStyledComponent(<Styled.Button type={'disabled'} />);
+            const wrapper = renderStyledComponent(<Styled.Button type="disabled" />);
 
             expect(wrapper).toHaveStyleRule('border', `solid 2px ${theme.colors.neutral}`);
             expect(wrapper).toHaveStyleRule('background-color', theme.colors['ligth-neutral']);

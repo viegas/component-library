@@ -8,10 +8,11 @@
   "scripts": {
     "start": "start-storybook",
     "build": "parcel build ./src/index.js",
-    "build-storybook": "build-storybook -c .storybook -o docs",
+    "build-storybook": "rm -rf docs && build-storybook -c .storybook -o docs",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint src --ext .js,.jsx"
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write src"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",

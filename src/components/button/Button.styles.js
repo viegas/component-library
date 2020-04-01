@@ -20,7 +20,7 @@ const buttonModifiers = {
             color: ${theme.colors['light-blue']};
         }
     `,
-    disabled: (theme, disabled) => css`
+    disabled: (theme) => css`
         border: solid 2px ${theme.colors.neutral};
         background-color: ${theme.colors['ligth-neutral']};
         cursor: not-allowed;

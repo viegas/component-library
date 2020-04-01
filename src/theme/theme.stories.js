@@ -21,10 +21,10 @@ const Theme = () => {
                             style={{
                                 backgroundColor: 'white',
                                 marginLeft: theme.spacings[key],
-                                marginBottom: theme.spacings[key]
+                                marginBottom: theme.spacings[key],
                             }}
                         >
-                            {key} - {theme.spacings[key]}
+                            {`${key} - ${theme.spacings[key]}`}
                         </div>
                     ))}
                 </div>
@@ -55,7 +55,7 @@ const Theme = () => {
                                         padding: '20px',
                                     }}
                                 >
-                                    {key} - {theme.colors[key]}
+                                    {`${key} - ${theme.colors[key]}`}
                                 </td>
                             </tr>
                         ))}
@@ -66,7 +66,7 @@ const Theme = () => {
                 <p>Font Size</p>
                 {Object.keys(theme.font.size).map((key) => (
                     <div style={{ fontSize: theme.font.size[key] }}>
-                        {key} - {theme.font.size[key]}
+                        {`${key} - ${theme.font.size[key]}`}
                     </div>
                 ))}
             </div>
@@ -74,7 +74,7 @@ const Theme = () => {
                 <p>Font Weights</p>
                 {Object.keys(theme.font.weight).map((key) => (
                     <div style={{ fontWeight: theme.font.weight[key] }}>
-                        {key} - {theme.font.weight[key]}
+                        {`${key} - ${theme.font.weight[key]}`}
                     </div>
                 ))}
             </div>

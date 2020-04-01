@@ -12,7 +12,7 @@ const Button = ({ type, disabled, busy, children, ...props }) => {
             {children}
             {busy && (
                 <Styled.LoaderWrapper>
-                    <Loader color={'dark-blue'}/>
+                    <Loader color="dark-blue" />
                 </Styled.LoaderWrapper>
             )}
         </Styled.Button>
@@ -20,7 +20,7 @@ const Button = ({ type, disabled, busy, children, ...props }) => {
 };
 
 Button.propTypes = {
-    color: PropTypes.oneOf(['primary', 'secondary']),
+    type: PropTypes.oneOf(['primary', 'secondary']),
     disabled: PropTypes.bool,
     busy: PropTypes.bool,
     children: PropTypes.node,

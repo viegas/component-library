@@ -4,18 +4,19 @@
     "rules": {
         "indent": ["error", 4],
         "import/prefer-default-export": ["off"],
+        "react/jsx-props-no-spreading": ["off"],
         "react/forbid-prop-types": ["off"],
         "react/jsx-filename-extension": ["off"],
         "react/jsx-closing-bracket-location": ["off"],
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
         "react/no-unused-prop-types": ["error"],
-        "import/no-extraneous-dependencies": ["error", {
-            "devDependencies": [
-                "**/*.test.jsx",
-                "**/*.stories.js"
-            ]
-        }]
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": ["**/*.test.jsx", "**/*.stories.js"]
+            }
+        ]
     },
     "overrides": [
         {
