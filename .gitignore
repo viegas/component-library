@@ -7,9 +7,6 @@ dist
 # Optional npm cache directory
 .npm
 
-# Coverage directory genereted by jest
-coverage
-
 #visual studio code
 .vscode/
 
