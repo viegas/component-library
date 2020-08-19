@@ -11,7 +11,7 @@ const sizes = Object.keys(config);
 
 storiesOf('Components', module).add('<Loader />', () => {
     const size = select('Loader Size', sizes, 'lg');
-    const color = select('Color', colors, colors[0]);
+    const color = select('Color', colors, 'blue');
 
     return <Loader size={size} color={color} />;
 });

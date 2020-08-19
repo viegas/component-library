@@ -45,8 +45,8 @@ describe('<Button />', () => {
         it('Check disabled type', () => {
             const wrapper = renderStyledComponent(<Styled.Button type="disabled" />);
 
-            expect(wrapper).toHaveStyleRule('border', `solid 2px ${theme.colors.neutral}`);
-            expect(wrapper).toHaveStyleRule('background-color', theme.colors['ligth-neutral']);
+            expect(wrapper).toHaveStyleRule('border', `solid 2px ${theme.colors['silver-darker']}`);
+            expect(wrapper).toHaveStyleRule('background-color', theme.colors['silver-lighter']);
             expect(wrapper).toHaveStyleRule('cursor', 'not-allowed');
 
             expect(wrapper).toMatchSnapshot();

@@ -7,7 +7,7 @@ const buttonModifiers = {
         color: ${theme.colors.white};
 
         &:hover {
-            background-color: ${theme.colors['light-blue']};
+            background-color: ${theme.colors['blue-500']};
         }
     `,
     secondary: (theme) => css`
@@ -16,13 +16,13 @@ const buttonModifiers = {
         color: ${theme.colors.blue};
 
         &:hover {
-            border-color: ${theme.colors['light-blue']};
-            color: ${theme.colors['light-blue']};
+            border-color: ${theme.colors['blue-400']};
+            color: ${theme.colors['blue-400']};
         }
     `,
     disabled: (theme) => css`
-        border: solid 2px ${theme.colors.neutral};
-        background-color: ${theme.colors['ligth-neutral']};
+        border: solid 2px ${theme.colors['silver-darker']};
+        background-color: ${theme.colors['silver-lighter']};
         cursor: not-allowed;
     `,
 };

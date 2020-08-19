@@ -12,7 +12,8 @@ exports[`<Button /> <Styled.Button /> Check disabled type 1`] = `
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
-  border: solid 2px #bbbbbb;
+  border: solid 2px #9a9c9f;
+  background-color: #e8e8e8;
   cursor: not-allowed;
 }
 
@@ -34,13 +35,13 @@ exports[`<Button /> <Styled.Button /> Check primary type 1`] = `
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
-  border: solid 2px #357edd;
-  background-color: #357edd;
-  color: #ffffff;
+  border: solid 2px #0077cc;
+  background-color: #0077cc;
+  color: #fff;
 }
 
 .c0:hover {
-  background-color: #96ccff;
+  background-color: #0095ff;
 }
 
 <button
@@ -61,14 +62,14 @@ exports[`<Button /> <Styled.Button /> Check secondary type 1`] = `
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
-  border: solid 2px #357edd;
-  background-color: #ffffff;
-  color: #357edd;
+  border: solid 2px #0077cc;
+  background-color: #fff;
+  color: #0077cc;
 }
 
 .c0:hover {
-  border-color: #96ccff;
-  color: #96ccff;
+  border-color: #379fef;
+  color: #379fef;
 }
 
 <button
@@ -111,7 +112,7 @@ exports[`<Button /> Should render correctly the busy loader 1`] = `
   Test
   <Buttonstyles__LoaderWrapper>
     <Loader
-      color="dark-blue"
+      color="blue-700"
       size="sm"
     />
   </Buttonstyles__LoaderWrapper>

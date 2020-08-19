@@ -12,7 +12,7 @@ const Button = ({ type, disabled, busy, children, ...props }) => {
             {children}
             {busy && (
                 <Styled.LoaderWrapper>
-                    <Loader color="dark-blue" />
+                    <Loader color="blue-700" />
                 </Styled.LoaderWrapper>
             )}
         </Styled.Button>

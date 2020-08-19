@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tag /> <Styled.Wrapper /> Should render correctly 1`] = `
+.c0 {
+  cursor: default;
+  display: inline-block;
+  font-size: 12px;
+  color: #39739d;
+  background-color: #e1ecf4;
+  padding: 5px 7px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: transparent;
+}
+
+.c0:hover {
+  color: #2c5777;
+  background-color: #d1e5f1;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Tag /> Should render correctly 1`] = `
+<Tagstyles__Wrapper>
+  Some text
+</Tagstyles__Wrapper>
+`;
