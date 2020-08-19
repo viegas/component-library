@@ -2,7 +2,7 @@
 
 A simple component library sample that i'm using for studies.
 
-Check the [live sample](https://viegas.github.io/component-library)
+Check the [live sample](https://viegas.github.io/component-library/docs)
 
 ## Used Technologies
 

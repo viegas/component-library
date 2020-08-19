@@ -10,7 +10,7 @@
     "build": "parcel build ./src/index.js",
     "build-storybook": "rm -rf docs && build-storybook -c .storybook -o docs",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watchAll",
     "lint": "eslint src --ext .js,.jsx",
     "format": "prettier --write src"
   },
