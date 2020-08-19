@@ -29,4 +29,4 @@ jobs:
       env:
         EMAIL: ${{ secrets.USER_EMAIL }}
         GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BUILD_DIR: /docs
+        BUILD_DIR: docs
