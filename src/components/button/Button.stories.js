@@ -1,10 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text, boolean, select } from '@storybook/addon-knobs';
 
 import Button from './Button';
 
-storiesOf('Components', module).add('<Button />', () => {
+export default {
+    title: 'Components',
+};
+
+export const ButtonStory = () => {
     const types = ['primary', 'secondary'];
 
     const props = {
@@ -14,4 +17,13 @@ storiesOf('Components', module).add('<Button />', () => {
     };
 
     return <Button {...props}>{text('Label', 'Button')}</Button>;
-});
+};
+
+ButtonStory.story = {
+    name: '<Button />',
+};
+
+
+ButtonStory.parameters = {
+  jest: 'Button.test.js',
+};

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import theme from './index';
 
@@ -82,6 +81,14 @@ const Theme = () => {
     );
 };
 
-storiesOf('Styles', module).add('theme.js', () => {
+export default {
+    title: 'Styles',
+};
+
+export const ThemeStory = () => {
     return <Theme />;
-});
+};
+
+ThemeStory.story = {
+    name: 'theme.js',
+};

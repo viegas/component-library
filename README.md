@@ -2,7 +2,7 @@
 
 A simple component library sample that i'm using for studies.
 
-Check the [live sample](https://viegas.github.io/component-library/docs)
+Check the [live sample](https://viegas.github.io/component-library)
 
 ## Used Technologies
 
@@ -28,4 +28,4 @@ You can use `npm` or `yarn` to run this project.
 
 You can run the library tests with `npm run test` or `npm run test:watch` to run in watch mode
 
-[Coverage report](https://viegas.github.io/component-library/coverage/lcov-report/)
+<!-- [Coverage report](https://viegas.github.io/component-library/coverage/lcov-report/) -->

@@ -17,10 +17,13 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12.14
+    
     - name: Install
       run: npm ci
+    
     - name: Test
       run: npm test
+    
     - name: Build
       run: npm run build-storybook
   
@@ -29,4 +32,4 @@ jobs:
       env:
         EMAIL: ${{ secrets.USER_EMAIL }}
         GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BUILD_DIR: docs
+        BUILD_DIR: dist

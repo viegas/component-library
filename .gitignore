@@ -12,3 +12,8 @@ dist
 
 #Cache folders
 .cache/
+
+docs
+coverage
+
+.jest-test-results.json
