@@ -12,12 +12,21 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: 12.14
-    - run: npm ci
-    - run: npm run build-storybook
-    - run: npm test
+    - name: Install
+      run: npm ci
+    - name: Test
+      run: npm test
+    - name: Build
+      run: npm run build-storybook
+  
+    - name: Deploy to GitHub Pages
+      uses: Cecilapp/GitHub-Pages-deploy@master
+      env:
+        EMAIL: ${{ secrets.USER_EMAIL }}
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_DIR: /docs
